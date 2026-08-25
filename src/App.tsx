@@ -1,12 +1,12 @@
 import Count from "./Exercise1-Count/Count";
-import BotonMeGusta from "./Exercise2-I like/BotonMeGusta"
+import ButtonILke from "./Exercise2-I like/ButtonILike"
 
 function App() {
 
   return (
     <div>
       <Count />
-      <BotonMeGusta />
+      <ButtonILke />
     </div>
 
   )
