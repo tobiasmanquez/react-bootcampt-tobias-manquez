@@ -1,7 +1,7 @@
 import Count from "./Class3/Exercise1-Count/Count"
 import ButtonILke from "./Class3/Exercise2-I like/ButtonILike"
-import Semaforo from "./Class4/TrafficLight"
-import StockAlert from "./StockAlert";
+import TrafficLight from "./Class4/TrafficLight"
+import StockAlert from "./Class4/StockAlert";
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Count />
       <ButtonILke />
-      <Semaforo/>
+      <TrafficLight/>
       <StockAlert/>
       
     </div>
