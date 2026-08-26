@@ -1,5 +1,5 @@
 import Count from "./Class3/Exercise1-Count/Count";
-import Semaforo from "./Class4/Semaforo"
+import Semaforo from "./Class4/TrafficLight"
 
 function App() {
 
