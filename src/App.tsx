@@ -1,5 +1,6 @@
-import Count from "./Exercise1-Count/Count";
-import ButtonILke from "./Exercise2-I like/ButtonILike"
+import Count from "./Class3/Exercise1-Count/Count"
+import ButtonILke from "./Class3/Exercise2-I like/ButtonILike"
+import Semaforo from "./Class4/TrafficLight"
 
 function App() {
 
@@ -7,6 +8,8 @@ function App() {
     <div>
       <Count />
       <ButtonILke />
+      <Count/>
+      <Semaforo/>
     </div>
 
   )
