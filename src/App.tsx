@@ -5,6 +5,7 @@ import StockAlert from "./Class4/StockAlert";
 import ListOfNames from "./Class5/ListOfNames";
 import RemoveNames from "./Class5/RemoveNames"
 import CountClicks from "./Class8/CountClicks";
+import CountDown from "./Class8/CountDown";
 
 function App() {
 
@@ -17,7 +18,10 @@ function App() {
       <ListOfNames/>
       <RemoveNames/>
       <CountClicks/>
+      <CountDown InitialSeconds={5}/> {/* Nota:Refrescar pagina para probar este exercise*/}
+
     </div>
+
 
   )
 }
