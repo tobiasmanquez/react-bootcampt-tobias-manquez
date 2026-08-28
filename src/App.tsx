@@ -4,6 +4,7 @@ import TrafficLight from "./Class4/TrafficLight"
 import StockAlert from "./Class4/StockAlert";
 import ListOfNames from "./Class5/ListOfNames";
 import RemoveNames from "./Class5/RemoveNames"
+import CountWhitMemory from "./Class9/CountWhitMemory"
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
       <StockAlert/>
       <ListOfNames/>
       <RemoveNames/>
-      
+      <CountWhitMemory InitialSeconds={10}/>
     </div>
 
   )
