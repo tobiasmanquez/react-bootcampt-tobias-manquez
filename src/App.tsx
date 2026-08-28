@@ -1,15 +1,14 @@
-
-import {ContadorProvider} from "./Class10/Context";
-import CountContext from "./Class10/CountContext"
+import Theme from "./Class10-Ex2/Tema";
+import { ThemeProvider } from "./Class10-Ex2/TemaContext";
 
 function App() {
 
   return (
     <div>
       
-      <ContadorProvider>
-        <CountContext />
-      </ContadorProvider>
+      <ThemeProvider>
+        <Theme/>
+      </ThemeProvider>
 
     </div>
 
