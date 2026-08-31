@@ -5,6 +5,7 @@ import StockAlert from "./Class4/StockAlert";
 import ListOfNames from "./Class5/ListOfNames";
 import RemoveNames from "./Class5/RemoveNames"
 import CountZustand from "./Class11/CountZustand";
+import Login from "./Class11-ex2/FormZustand";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <ListOfNames/>
       <RemoveNames/>
       <CountZustand/>
+      <Login/>
     </div>
 
   )
