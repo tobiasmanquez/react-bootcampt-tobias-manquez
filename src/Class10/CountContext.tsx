@@ -1,26 +1,27 @@
-import { useContador } from "./Context";
+import { createContext, useContext, useState, type ReactNode } from 'react'
 
-
-function Count() {
-
-    const { contador, incrementar } = useContador()
-
-    return (
-        <div>
-            <section id="counter">
-                <div> {contador}</div>
-                <button
-                    type="button"
-                    className="counter addition"
-                    onClick={incrementar}
-                >
-                    Count Addition is
-                </button>
-                </section>
-        </div>
-
-    );
+interface ContadorContextType {
+    contador: number
+    incrementar: () => void
 }
 
-export default Count;
+export const ContadorContext = createContext<ContadorContextType | undefined>(undefined)
 
+export function ContadorProvider({ children }: { children: ReactNode }) {
+    const [contador, setContador] = useState(0)
+    const incrementar = () => setContador((c) => c + 1)
+
+    return (
+        <ContadorContext.Provider value={{ contador, incrementar }}>
+            {children}
+        </ContadorContext.Provider>
+    )
+}
+
+export function useContador() {
+    const contexto = useContext(ContadorContext)
+    if (!contexto) {
+        throw new Error('useContador debe usarse dentro de un ContadorContext.Provider')
+    }
+    return contexto
+}
