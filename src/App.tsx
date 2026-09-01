@@ -8,6 +8,8 @@ import SubscriptionForm from "./Class6/SubscriptionForm"
 import CountClicks from "./Class8/CountClicks";
 import CountDown from "./Class8/CountDown";
 import CountWhitMemory from "./Class9/CountWhitMemory"
+import Theme from "./Class10-Ex2/Tema";
+import { ThemeProvider } from "./Class10-Ex2/TemaContext";
 
 function App() {
 
@@ -27,6 +29,12 @@ function App() {
       <ListOfNames />
       <RemoveNames />
       <CountWhitMemory InitialSeconds={10} />
+
+      {/* useContext */}
+      <ThemeProvider>
+        <Theme/>
+      </ThemeProvider>
+
     </div>
 
 
