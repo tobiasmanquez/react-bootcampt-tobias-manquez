@@ -4,6 +4,7 @@ import TrafficLight from "./Class4/TrafficLight"
 import StockAlert from "./Class4/StockAlert";
 import ListOfNames from "./Class5/ListOfNames";
 import RemoveNames from "./Class5/RemoveNames"
+import SubscriptionForm from "./Class6/SubscriptionForm"
 import CountClicks from "./Class8/CountClicks";
 import CountDown from "./Class8/CountDown";
 
@@ -13,12 +14,13 @@ function App() {
     <div>
       <Count />
       <ButtonILke />
-      <TrafficLight/>
-      <StockAlert/>
-      <ListOfNames/>
-      <RemoveNames/>
-      <CountClicks/>
-      <CountDown InitialSeconds={5}/> {/* Nota:Refrescar pagina para probar este exercise*/}
+      <TrafficLight />
+      <StockAlert />
+      <ListOfNames />
+      <RemoveNames />
+      <SubscriptionForm />
+      <CountClicks />
+      <CountDown InitialSeconds={5} /> {/* Nota:Refrescar pagina para probar este exercise*/}
 
     </div>
 
@@ -26,3 +28,4 @@ function App() {
   )
 }
 export default App;
+
