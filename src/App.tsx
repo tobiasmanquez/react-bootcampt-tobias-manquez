@@ -7,6 +7,7 @@ import RemoveNames from "./Class5/RemoveNames"
 import SubscriptionForm from "./Class6/SubscriptionForm"
 import CountClicks from "./Class8/CountClicks";
 import CountDown from "./Class8/CountDown";
+import CountWhitMemory from "./Class9/CountWhitMemory"
 
 function App() {
 
@@ -21,7 +22,11 @@ function App() {
       <SubscriptionForm />
       <CountClicks />
       <CountDown InitialSeconds={5} /> {/* Nota:Refrescar pagina para probar este exercise*/}
-
+      <TrafficLight />
+      <StockAlert />
+      <ListOfNames />
+      <RemoveNames />
+      <CountWhitMemory InitialSeconds={10} />
     </div>
 
 
