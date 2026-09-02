@@ -1,5 +1,6 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
 import "./App.css"
+
 import Class3Page from "./Pages/Class3"
 import Class4Page from "./Pages/Class4"
 import Class5Page from "./Pages/Class5"
@@ -10,6 +11,8 @@ import Class10Page from "./Pages/Class10"
 import { ContadorProvider } from "./Class10/CountContext"
 import Class10Ex2Page from "./Pages/Class10-2"
 import { ThemeProvider } from "./Class10-Ex2/ThemeContext"
+import CountZustand from "./Class11/CountZustand";
+import Login from "./Class11-ex2/FormZustand";
 
 function App() {
 
@@ -42,6 +45,7 @@ function App() {
         </ThemeProvider>
       </ContadorProvider>
     </BrowserRouter>
+
   )
 }
 export default App
