@@ -11,8 +11,8 @@ import Class10Page from "./Pages/Class10"
 import { ContadorProvider } from "./Class10/CountContext"
 import Class10Ex2Page from "./Pages/Class10-2"
 import { ThemeProvider } from "./Class10-Ex2/ThemeContext"
-import CountZustand from "./Class11/CountZustand";
-import Login from "./Class11-ex2/FormZustand";
+import Class11Page from "./Class11/CountZustand";
+import Class11Ex2Page from "./Class11-Ex2/FormZustand";
 
 function App() {
 
@@ -30,6 +30,9 @@ function App() {
             <Link to={'/Class9/CountWhitMemory'} style={{ margin: '20px' }}>Class 9</Link>
             <Link to={'/Class10/CountContext'} style={{ margin: '20px' }}>Class 10</Link>
             <Link to={'/Class10-2/ThemeContext'} style={{ margin: '20px' }}>Class 10-2</Link>
+            <Link to={'/Class11/CountZustand'} style={{ margin: '20px' }}>Class 11</Link>
+            <Link to={'/Class11-Ex2/FormZustand'} style={{ margin: '20px' }}>Class 11-2</Link>
+
           </nav>
           <Routes>
             <Route path="/" element={<div style={{ height: 200, width: 200, backgroundColor: 'red' }} />} />
@@ -41,6 +44,8 @@ function App() {
             <Route path="/Class9/CountWhitMemory" element={<Class9Page />} />
             <Route path="/Class10/CountContext" element={<Class10Page />} />
             <Route path="/Class10-2/ThemeContext" element={<Class10Ex2Page />} />
+            <Route path="/Class11/CountZustand" element={<Class11Page />} />
+            <Route path="/Class11-Ex2/FormZustand" element={<Class11Ex2Page />} />
           </Routes>
         </ThemeProvider>
       </ContadorProvider>
