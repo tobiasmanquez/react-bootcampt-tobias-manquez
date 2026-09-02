@@ -10,6 +10,8 @@ import CountDown from "./Class8/CountDown";
 import CountWhitMemory from "./Class9/CountWhitMemory"
 import Theme from "./Class10-Ex2/Tema";
 import { ThemeProvider } from "./Class10-Ex2/TemaContext";
+import CountZustand from "./Class11/CountZustand";
+import Login from "./Class11-ex2/FormZustand";
 
 function App() {
 
@@ -32,9 +34,10 @@ function App() {
 
       {/* useContext */}
       <ThemeProvider>
-        <Theme/>
+        <Theme />
       </ThemeProvider>
-
+      <CountZustand />
+      <Login />
     </div>
 
 
