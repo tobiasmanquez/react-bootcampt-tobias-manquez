@@ -1,4 +1,4 @@
-import { useTheme } from "./TemaContext";
+import { useTheme } from "./ThemeContext";
 
 
 function Theme() {
