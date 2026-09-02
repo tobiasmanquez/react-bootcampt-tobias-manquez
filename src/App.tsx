@@ -13,6 +13,9 @@ import Class10Ex2Page from "./Pages/Class10-2"
 import { ThemeProvider } from "./Class10-Ex2/ThemeContext"
 import Class11Page from "./Class11/CountZustand";
 import Class11Ex2Page from "./Class11-Ex2/FormZustand";
+import Class12Page from "./Pages/Class12";
+
+
 
 function App() {
 
@@ -32,8 +35,11 @@ function App() {
             <Link to={'/Class10-2/ThemeContext'} style={{ margin: '20px' }}>Class 10-2</Link>
             <Link to={'/Class11/CountZustand'} style={{ margin: '20px' }}>Class 11</Link>
             <Link to={'/Class11-Ex2/FormZustand'} style={{ margin: '20px' }}>Class 11-2</Link>
+            <Link to={'/Class12/InfoCard/Counter'} style={{ margin: '20px' }}>Class 12</Link>
 
           </nav>
+         
+          
           <Routes>
             <Route path="/" element={<div style={{ height: 200, width: 200, backgroundColor: 'red' }} />} />
             <Route path="/Class3/Count/ButtonIlike" element={<Class3Page />} />
@@ -46,6 +52,7 @@ function App() {
             <Route path="/Class10-2/ThemeContext" element={<Class10Ex2Page />} />
             <Route path="/Class11/CountZustand" element={<Class11Page />} />
             <Route path="/Class11-Ex2/FormZustand" element={<Class11Ex2Page />} />
+            <Route path="/Class12/InfoCard/Counter" element={<Class12Page />} />
           </Routes>
         </ThemeProvider>
       </ContadorProvider>
